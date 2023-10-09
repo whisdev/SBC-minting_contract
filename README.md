@@ -1,6 +1,6 @@
-# Bluemoon NFT Evolution
+# SBC NFT Minting
 
-This contract is for evolution of Bluemoon NFTs. The blank pendant is filled with user's custom NFT by updating metadata of the NFT.
+This contract is for minting of SBC NFTs. The blank pendant is filled with user's custom NFT by updating metadata of the NFT with description as JSON file.
 
 Try running some of the following tasks:
 
@@ -14,17 +14,17 @@ To compile the contract, try this
 yarn hardhat compile
 ```
 
-For deploying the contract to Goerli testnet
+For deploying the contract to Sepolia testnet
 ```
-yarn hardhat run ./scripts/deploy_bluemoon.ts --network goerli
+yarn hardhat run ./scripts/minting.ts --network sepolia
 ```
 or to Ethereum mainnet
 ```
-yarn hardhat run ./scripts/deploy_bluemoon.ts --network mainnet
+yarn hardhat run ./scripts/minting.ts --network mainnet
 ```
 
 For verifying the contract
 ```
-yarn hardhat verify <deployed contract address> Bluemoon_NFT BMT --network goerli
+yarn hardhat verify <deployed contract address> SBC_minting SBC_minting --network sepolia
 ```
 
